@@ -1,0 +1,23 @@
+{
+  "threshold": 0.78461092710495,
+  "feature_names": [
+    "distance",
+    "age",
+    "amt",
+    "city_pop",
+    "gender",
+    "job",
+    "category",
+    "city",
+    "state",
+    "zip",
+    "merchant",
+    "trans_hour",
+    "trans_minute",
+    "trans_second",
+    "trans_year",
+    "trans_month",
+    "trans_day"
+  ],
+  "model_type": "xgboost_json"
+}

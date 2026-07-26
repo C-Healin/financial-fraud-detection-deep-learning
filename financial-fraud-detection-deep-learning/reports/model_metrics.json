@@ -1,0 +1,86 @@
+{
+  "XGBoost": {
+    "roc_auc": 0.7681855240510915,
+    "pr_auc": 0.27797830959210934,
+    "precision": 0.5,
+    "recall": 0.18421052631578946,
+    "f1": 0.2692307692307692,
+    "threshold": 0.78461092710495,
+    "fraud_rate": 0.03166666666666667,
+    "support": 1200,
+    "confusion_matrix": [
+      [
+        1155,
+        7
+      ],
+      [
+        31,
+        7
+      ]
+    ],
+    "model": "XGBoost"
+  },
+  "Embedding MLP": {
+    "roc_auc": 0.8042621614276656,
+    "pr_auc": 0.3747602509553149,
+    "precision": 0.46153846153846156,
+    "recall": 0.3157894736842105,
+    "f1": 0.375,
+    "threshold": 0.9096807241439819,
+    "fraud_rate": 0.03166666666666667,
+    "support": 1200,
+    "confusion_matrix": [
+      [
+        1148,
+        14
+      ],
+      [
+        26,
+        12
+      ]
+    ],
+    "model": "Embedding MLP"
+  },
+  "GraphSAGE": {
+    "roc_auc": 0.7469426578494428,
+    "pr_auc": 0.330857514110594,
+    "precision": 0.5,
+    "recall": 0.2894736842105263,
+    "f1": 0.36666666666666664,
+    "threshold": 0.5769569873809814,
+    "fraud_rate": 0.03166666666666667,
+    "support": 1200,
+    "confusion_matrix": [
+      [
+        1151,
+        11
+      ],
+      [
+        27,
+        11
+      ]
+    ],
+    "model": "GraphSAGE"
+  },
+  "GNN + XGBoost": {
+    "roc_auc": 0.78754869100462,
+    "pr_auc": 0.2824240119094743,
+    "precision": 0.4090909090909091,
+    "recall": 0.23684210526315788,
+    "f1": 0.3,
+    "threshold": 0.8592117428779602,
+    "fraud_rate": 0.03166666666666667,
+    "support": 1200,
+    "confusion_matrix": [
+      [
+        1149,
+        13
+      ],
+      [
+        29,
+        9
+      ]
+    ],
+    "model": "GNN Embeddings + XGBoost"
+  }
+}

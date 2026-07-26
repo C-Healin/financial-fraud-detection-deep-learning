@@ -1,0 +1,2 @@
+-r requirements.txt
+tritonclient[http]>=2.43,<3

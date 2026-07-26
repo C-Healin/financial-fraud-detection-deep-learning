@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Financial fraud detection system architecture</title>
+  <desc id="desc">Transaction data is validated and split into tabular and graph pipelines. XGBoost, embedding MLP, GraphSAGE, and a hybrid model are evaluated and deployed through FastAPI, Streamlit, Docker, or Triton.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#52606d"/>
+    </marker>
+    <style>
+      .box { fill:#f8fafc; stroke:#334e68; stroke-width:2; rx:14; }
+      .accent { fill:#e8f1ff; stroke:#1f5fbf; stroke-width:2; rx:14; }
+      .graph { fill:#eefcf4; stroke:#168a4a; stroke-width:2; rx:14; }
+      .deploy { fill:#fff7e6; stroke:#b66a00; stroke-width:2; rx:14; }
+      .text { font-family:Arial, sans-serif; fill:#102a43; font-size:20px; text-anchor:middle; dominant-baseline:middle; }
+      .small { font-family:Arial, sans-serif; fill:#486581; font-size:15px; text-anchor:middle; dominant-baseline:middle; }
+      .line { stroke:#52606d; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect x="35" y="265" width="180" height="88" class="box"/>
+  <text x="125" y="298" class="text">Transaction Data</text>
+  <text x="125" y="326" class="small">CSV / Parquet / synthetic</text>
+
+  <rect x="265" y="265" width="180" height="88" class="box"/>
+  <text x="355" y="298" class="text">Validation &amp; Split</text>
+  <text x="355" y="326" class="small">70 / 15 / 15 stratified</text>
+
+  <rect x="505" y="85" width="190" height="88" class="accent"/>
+  <text x="600" y="118" class="text">XGBoost</text>
+  <text x="600" y="146" class="small">tabular baseline</text>
+
+  <rect x="505" y="215" width="190" height="88" class="accent"/>
+  <text x="600" y="248" class="text">Embedding MLP</text>
+  <text x="600" y="276" class="small">PyTorch + 13 embeddings</text>
+
+  <rect x="505" y="345" width="190" height="88" class="graph"/>
+  <text x="600" y="378" class="text">GraphSAGE</text>
+  <text x="600" y="406" class="small">card–merchant graph</text>
+
+  <rect x="505" y="475" width="190" height="88" class="graph"/>
+  <text x="600" y="508" class="text">GNN + XGBoost</text>
+  <text x="600" y="536" class="small">node embeddings + tabular</text>
+
+  <rect x="755" y="265" width="190" height="88" class="box"/>
+  <text x="850" y="298" class="text">Evaluation</text>
+  <text x="850" y="326" class="small">PR-AUC · ROC · F1</text>
+
+  <rect x="995" y="215" width="170" height="188" class="deploy"/>
+  <text x="1080" y="252" class="text">Deployment</text>
+  <text x="1080" y="290" class="small">FastAPI</text>
+  <text x="1080" y="320" class="small">Streamlit</text>
+  <text x="1080" y="350" class="small">Docker</text>
+  <text x="1080" y="380" class="small">Triton FIL</text>
+
+  <path d="M215 309 L265 309" class="line"/>
+  <path d="M445 295 C470 240 470 130 505 130" class="line"/>
+  <path d="M445 300 C470 285 480 260 505 260" class="line"/>
+  <path d="M445 318 C470 345 480 390 505 390" class="line"/>
+  <path d="M445 325 C470 410 470 520 505 520" class="line"/>
+  <path d="M695 130 C730 150 730 270 755 290" class="line"/>
+  <path d="M695 260 L755 300" class="line"/>
+  <path d="M695 390 L755 320" class="line"/>
+  <path d="M695 520 C730 485 730 350 755 330" class="line"/>
+  <path d="M945 309 L995 309" class="line"/>
+</svg>
