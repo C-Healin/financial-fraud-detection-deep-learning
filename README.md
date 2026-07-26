@@ -29,7 +29,7 @@ I independently restructured the experiments into a modular Python pipeline, imp
 
 ## Architecture
 
-![System architecture](./reports/architecture.svg?raw=1)
+![System architecture](./financial-fraud-detection-deep-learning/reports/architecture.svg)
 
 ```mermaid
 flowchart LR
@@ -89,11 +89,15 @@ The included sample contains 8,000 synthetic transactions with a fraud rate of a
 | GraphSAGE | 0.747 | 0.331 | 0.500 | 0.289 | 0.367 |
 | GNN + XGBoost | 0.788 | 0.282 | 0.409 | 0.237 | 0.300 |
 
-![Model comparison](./reports/model_comparison.png?raw=1)
+![Model comparison](./financial-fraud-detection-deep-learning/reports/model_comparison.png)
 
 <p align="center">
-  <img src="./reports/roc_curve.png?raw=1" width="48%" alt="ROC curves">
-  <img src="./reports/pr_curve.png?raw=1" width="48%" alt="Precision recall curves">
+  <img src="./financial-fraud-detection-deep-learning/reports/roc_curve.png"
+       width="48%"
+       alt="ROC curves">
+  <img src="./financial-fraud-detection-deep-learning/reports/pr_curve.png"
+       width="48%"
+       alt="Precision recall curves">
 </p>
 
 ## Repository Structure
